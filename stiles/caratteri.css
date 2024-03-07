@@ -1,0 +1,49 @@
+.testo1 {
+    color: #6c0000;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 30pt;
+}
+
+figcaption {
+    text-align: center; /* Centra il testo */
+    font-style: italic; /* Stile corsivo */
+    font-size: 14px; /* Dimensione del testo */
+}
+
+ul {
+    font-family: "Times New Roman", sans-serif; /* Specify the desired font */
+    font-size: 16px; /* Specify the font size */
+    font-weight: bold; /* Specify the font weight */
+    /* Add any additional font styles here */
+}
+
+nav {
+    background-color: #530101;
+    padding: 10px 20px; /* Spaziatura interna */
+}
+ul.navbar {
+    list-style-type: none; /* Rimuove i punti dall'elenco */
+    margin: 0;
+    padding: 0;
+}
+ul.navbar li {
+    display: inline; /* Disposizione orizzontale */
+    margin-right: 20px; /* Spaziatura tra i link */
+}
+ul.navbar a {
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+
+.padd {
+    padding-left: 70pt;
+}
+
+@media screen and (max-width: 769px) {
+    
+    .padd {
+        padding-left: 25px;
+    }
+
+}
