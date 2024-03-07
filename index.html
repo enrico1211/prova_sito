@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="restile.css">
+  <link rel="stylesheet" type="text/css" href="stiles/restile.css">
+  <link rel="stylesheet" type="text/css" href="stiles/altro.css">
+  <link rel="stylesheet" type="text/css" href="stiles/caratteri.css">
   <title>Primo tentativo</title>
 
 </head>
@@ -13,30 +15,92 @@
     <div class="container">
       <div class="image"></div>
       <div class="content">
-        <img class="mobile-only" src="mark-tarrisse-strange-structure-001ab.jpg" alt="Image Description"> <!-- Image for mobile only -->
+        <img class="mobile-only" src="content/BACHECA.jpg" alt="Image Description"> <!-- Image for mobile only -->
         <!-- <img class="desktop-only" src="mark-tarrisse-strange-structure-001ab.jpg" alt="Image Description"> Image for desktop only -->
         <!-- Your content goes here -->
-        <h1>Welcome to My Website</h1>
+
+
+        <nav>
+          <ul class="navbar">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+
+        <h1 id="puntatore">Welcome to my personal Website
+          <br>
+        I'm <span class="testo1">ENRICO DI SALVO</span></h1>
         <!-- <div class="spacer"></div> -->
-        <p>This is the right content section.</p>
+        <p>student of BLA BLA BLA
+          <br><br>
+          Did:
+        </p>
+        <div class="padd">
+          <ul>
+            <li>eh 1</li>
+            <li>eh 2</li>
+            <li>eh 3</li>
+          </ul>
+        </div>
+        
 
         <!-- <div class="spacer"></div> -->
 
-        <h2>WORKS</h2>
-        <p>Click here to view pdf.</p>
+        <h5>RECENT WORKS</h5>
+        <div class="despacer"></div>
+        <div class="contenitore">
+          <img src="content/snippetSAP.svg" alt="Immagine" class="immagine" onclick="mostraFinestra('overlay')">
+          <div id="overlay" class="overlay" onclick="chiudiFinestra('overlay')">
+            <div id="window" class="window">
+              <h3>Abstract:</h3>
+              <div class="despacer"></div>
+              <p2>
+                this thesis work centered around...
+
+                <br>
+              </p2>
+              
+              <a href="content/Dissertazione_Di_Salvo_1947134.pdf" target="_blank" class="pdf-link1">PDF</a>
+
+            </div>
+          </div>
+
+          <img src="content/snippetTS.svg" alt="Immagine" class="immagine" onclick="mostraFinestra('overlay2')">
+          <div id="overlay2" class="overlay" onclick="chiudiFinestra('overlay2')">
+            <div id="window" class="window">
+              <h3>Abstract:</h3>
+              <div class="despacer"></div>
+              <p2>
+                The laboratory of condensed matter Physics focused on...
+
+                <br>
+              </p2>
+              
+              <a href="content/lab_di_condensata (6).pdf" target="_blank" class="pdf-link2">PDF</a>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <p>Click here to view pdf.</p>
         <a href="lab_di_condensata (7).pdf" target="_blank">
             <div class="image-container">
                 <img src="provaRisorsa 2@300x-100.jpg" alt="Your Image">
             </div>
-        </a>
+        </a> -->
         
         <div class="spacer"></div>
 
 
 
-        
+        <script src="scripts/scroll.js"></script>  
       </div>
     </div>
     <!-- <script src="script.js"></script> -->
+    <script src="scripts/popup.js"></script>
   </body>
   </html>
