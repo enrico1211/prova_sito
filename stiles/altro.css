@@ -1,6 +1,7 @@
 .contenitore {
+    /* position: relative; */
     display: inline-block;
-    margin-top: -50pt;
+    /* margin-top: -50pt; */
     padding-right: 70px;
     padding-left: 70px;
     font-family: "Times New Roman", sans-serif;
@@ -9,7 +10,7 @@
     size: 100%;
 }
 .immagine {
-    width: 40%; /* Ogni immagine occupa il 50% del contenitore */
+    width: 30%; /* Ogni immagine occupa il 50% del contenitore */
     height: auto;
     cursor: pointer; /* Altezza automatica mantenendo le proporzioni originali */
 }
@@ -88,9 +89,13 @@
 
 
     .contenitore{
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-top: -25pt;
+        padding-right: 35px;
+        padding-left: 35px;
+        margin-top: 10pt;
+    }
+
+    .immagine {
+        width: 100%;
     }
 
 }

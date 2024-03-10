@@ -11,6 +11,11 @@
     overflow-y: auto;
     max-width: 100vw; /* Limit the container's width to the viewport width */
     overflow-x: hidden;
+    background-color: rgb(236, 236, 236);
+
+    /* background: linear-gradient(to top right, #ffffff, #cecece);
+    background: -webkit-linear-gradient(to bottom right, #ff8a00, #da1b60);
+    background-attachment: fixed; */
 }
 
 .spacer {
@@ -23,12 +28,14 @@
 
   /* left image section */
 .image {
-    flex: 0 0 31%;
+    flex: 0 0 28%;
     width: auto;
     height: auto;
     /* position: relative; */
-    background: url('../content/BACHECA.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('../content/VIEW.jpg') no-repeat center center;
+    background-position: bottom;
+    background-size:contain ;
+    /* background-size: cover; */
 }
 
 .image-container {
@@ -62,48 +69,6 @@
 body {
     margin: 0;
     overflow: hidden;
-}
-
-
-
-h1 {
-    margin-top: -5pt;
-    padding-right: 70px;
-    padding-left: 70px;
-    font-family: "Times New Roman", sans-serif;
-    color: #333;
-    font-size: 26pt;
-    padding: 70px;
-}
-
-h2 {
-    margin-top: -5pt;
-    padding-right: 70px;
-    padding-left: 70px;
-    font-family: "Times New Roman", sans-serif;
-    color: #000000;
-    font-size: 20pt;
-    padding: 70px;
-}
-
-h5 {
-    margin-top: -5pt;
-    padding-right: 70px;
-    padding-left: 70px;
-    font-family: "Times New Roman", sans-serif;
-    color: #6c0000;
-    font-size: 20pt;
-    padding: 70px;
-}
-
-p {
-    margin-top: -60pt;
-    font-family: "Courier New", serif;
-    color: #666;
-    font-size: 14pt;
-    text-align: justify;
-    padding-right: 70px;
-    padding-left: 70px;
 }
 
 
@@ -143,17 +108,6 @@ p {
 @media screen and (max-width: 769px) {
     .image{
         display: none;
-    }
-
-    h1, h2, h5{
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-top: -25pt;
-    }
-
-    p{
-        padding-right: 25px;
-        padding-left: 25px;
     }
 
     .image-container {
